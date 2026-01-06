@@ -1,7 +1,7 @@
 1. Overview
 
 API Name: DummyJSON
-Base URL: https://dummyjson.com
+Base URL: https://dummyjson.com 
 Description: Public mock API for testing and prototyping, providing endpoints for users, posts, products, carts, todos, quotes, and authentication.
 Purpose: To validate CRUD operations, authentication, response codes, and data integrity.
 

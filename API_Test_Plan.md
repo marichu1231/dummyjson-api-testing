@@ -50,6 +50,7 @@ P-03	Get single post invalid ID	GET	N/A	{ "message": "Post not found" }	404
 P-04	Create post	POST	{ "title":"Test","body":"Some text","userId":1 }	Post object with id	200
 P-05	Update post	PATCH	{ "title":"Updated" }	Updated post object	200
 P-06	Delete post	DELETE	N/A	{}	200
+
 D. Edge / Negative Cases
 Scenario	Endpoint	Expected Response
 Access user/post with non-numeric ID	/users/abc or /posts/xyz	400 / 404
@@ -57,6 +58,7 @@ Use invalid token	Protected endpoint	401 Unauthorized
 No token for protected endpoint	/users/add or /posts/add	401 Unauthorized
 Unsupported HTTP method	e.g., GET on /users/add	405 Method Not Allowed
 Missing required fields in POST	e.g., {}	Mocked success (note limitation)
+
 5. Test Tools
 
 Postman: Manual & automated testing
